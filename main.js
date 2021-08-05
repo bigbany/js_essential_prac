@@ -110,16 +110,24 @@ class Vehicle{
   }
 }
 
+const myVehicle =new Vehicle('운송수단','2')
+console.log(myVehicle)
+
 class Bicycle extends Vehicle{
   constructor(name,wheel){
     super(name,wheel)
   }
 }
+const myBc =new Bicycle('자전거','3')
+console.log(myBc)
 
 class Car extends Vehicle{
   constructor(name, wheel,license){
     super(name,wheel)
     this.license =license
-    
+
   }
 }
+
+const myCar =new Car('tesla','4','2years')
+console.log(myCar)
